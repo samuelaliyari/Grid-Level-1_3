@@ -1,0 +1,63 @@
+
+
+
+/* ====================================================================
+                                RESET
+=====================================================================*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ====================================================================
+                                HEADER
+=====================================================================*/
+
+
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    padding: 16px;
+    gap: 4px;
+
+}
+
+
+
+
+Header {
+    background-color: rgb(5, 34, 255);
+    grid-column: 1 / -1;
+}
+.sidebar {
+    background-color: rgb(0, 133, 18);
+    grid-row: 2 / 10;
+    grid-column: 1 /2;
+}
+.main_content {
+    background-color: rgb(195, 0, 0);
+    grid-row: 2 / 10;
+    grid-column: 2 / 5;
+}
+footer {
+    background-color: rgb(147, 0, 127);
+    grid-row: 10 / 11;
+    grid-column: 1 /-1;
+}
